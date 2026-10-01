@@ -10,7 +10,7 @@ about.html       Team cards
 projects.html    Game list with Play links
 404.html         Not-found page (GitHub Pages serves it automatically)
 styles.css       All styling (colours and fonts are CSS variables at the top)
-assets/          Logo, favicon, team portraits
+assets/          Logo, favicon, team portraits, project covers
 .nojekyll        Tells Pages to serve files as-is
 ```
 
@@ -27,14 +27,4 @@ To use your own domain (e.g. `dopedevelopers.com`), add it under **Settings → 
 ## Editing
 
 - **Add a team member:** copy one `<li class="member">…</li>` block in `about.html` and drop a 64×64 PNG in `assets/team/`.
-- **Add a project:** copy one `<article class="project">…</article>` block in `projects.html`.
-
-## TODO
-
-The two project cover images are still hotlinked from Framer's CDN (`framerusercontent.com`). Before you take the Framer site down, download them into `assets/projects/` and update the `src` paths in `projects.html`:
-
-```sh
-mkdir -p assets/projects
-curl -o assets/projects/10-paces-9-lives.png https://framerusercontent.com/images/81FxQatikGodCEupii3uhtE2EI.png
-curl -o assets/projects/weedwacker.png https://framerusercontent.com/images/htiR5MmC9vfDo1jlMngmbFlqEZo.png
-```
+- **Add a project:** copy one `<article class="project">…</article>` block in `projects.html` and put its cover in `assets/projects/`.
