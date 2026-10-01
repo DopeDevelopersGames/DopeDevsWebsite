@@ -126,6 +126,18 @@ main {
   line-height: 1.2;
 }
 
+/* Idle wave: each letter bobs in turn, then the heading rests before the next pass */
+.wave span span {
+  display: inline-block;
+  animation: wave 2.8s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 70ms);
+}
+
+@keyframes wave {
+  0%, 30%, 100% { transform: translateY(0); }
+  15% { transform: translateY(-0.14em); }
+}
+
 .hero p {
   max-width: 34ch;
   margin: 20px 0 48px;
@@ -244,5 +256,5 @@ main {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
+  * { transition: none !important; animation: none !important; }
 }
