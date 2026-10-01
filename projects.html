@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Projects — Dope Developers</title>
+  <meta name="description" content="We are Dope Developers! A small team of friends making games with fun and innovative mechanics.">
+  <meta property="og:title" content="Our Projects — Dope Developers">
+  <meta property="og:description" content="We are Dope Developers!">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=Jersey+25&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="./" aria-label="Dope Developers home"><img class="pixel" src="assets/logo.png" alt="DD" width="64" height="64"></a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="about.html">About Us</a>
+      <a href="projects.html" aria-current="page">Our Projects</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="page-title">Our Projects</h1>
+    <div class="projects">
+      <article class="project">
+        <img class="cover" src="assets/projects/10-paces-9-lives.png" alt="10 Paces, 9 Lives cover art" width="512" height="406" loading="lazy">
+        <div class="info">
+          <h2>10 Paces, 9 Lives</h2>
+          <p class="event">GMTK Game Jam 2026</p>
+          <p class="desc">A rhythm duelling roguelike where every enemy is a song. Its attack patterns are its beatmap; so learning the track and learning the fight are the same act. Every action you take, attack, parry, or dodge, must land on the beat.</p>
+          <a class="btn" href="https://thebenjiechang.itch.io/10-paces-9-lives" target="_blank" rel="noopener">Play</a>
+        </div>
+      </article>
+      <article class="project">
+        <img class="cover" src="assets/projects/weedwacker.png" alt="Weedwacker cover art" width="512" height="267" loading="lazy">
+        <div class="info">
+          <h2>Weedwacker</h2>
+          <p class="event">Ludum Dare 42 (19th Overall, 7th in Fun)</p>
+          <p class="desc">Turrets vs Horde survivors-like game. Summon gardening tools to your aid to fight against the evil plants that have come to steal your nuts (metal ones of course).</p>
+          <a class="btn" href="https://play.unity.com/en/games/2f8982e9-eaa6-446a-8d4d-3e717075c890/weedwacker" target="_blank" rel="noopener">Play</a>
+        </div>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">© <span id="y">2026</span> Dope Developers</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
