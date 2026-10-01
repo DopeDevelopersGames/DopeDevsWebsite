@@ -47,7 +47,16 @@ a { color: inherit; text-decoration: none; }
   gap: 16px;
 }
 
-.logo img { width: 48px; height: 48px; }
+.logo { display: inline-block; }
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  transition: transform .25s cubic-bezier(.34, 1.56, .64, 1);
+}
+
+.logo:hover img,
+.logo:focus-visible img { transform: rotate(10deg) scale(1.12); }
 
 .site-nav { display: flex; gap: clamp(16px, 3vw, 32px); }
 
